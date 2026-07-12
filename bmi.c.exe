@@ -2,7 +2,7 @@ if(indice<=18.5)
 		printf("condicion:bajo peso\n");
 	else if ((indice>18.5)&&(indice<=24.9))
 		printf("condicion:normal\n");
-	else if ((indice>=25)&&(indice>=29.9))
+	else if ((indice>=25)&&(indice<=29.9))
 		printf("condicion:sobrepeso\n");
 	else if (indice>=30)
 		printf("condicion:obesidad\n");
