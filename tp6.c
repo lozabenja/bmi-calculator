@@ -18,8 +18,8 @@ int main(int argc, char *argv[]) {
 	
 	do{printf("Ingrese la figura que desea calcular\n");
 	printf("1 = Circulo\n");
-	printf("2 = Rect·ngulo\n");
-	printf("OpciÛn: ");
+	printf("2 = Rect√°ngulo\n");
+	printf("Opci√≥n: ");
 	scanf("%d",&opcion);
 	}while((opcion!=1)&&(opcion!=2));
 	
@@ -87,8 +87,8 @@ return perimetro;
 }
 void ImprimirResultados(float area,float perimetro){
 	
-	printf("el ·rea es:%.2f\n",area);
-	printf("el perÌmetro es:%.2f",perimetro);
+	printf("el √°rea es:%.2f\n",area);
+	printf("el per√≠metro es:%.2f",perimetro);
 	
 	return ;
 }
