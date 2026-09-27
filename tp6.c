@@ -2,11 +2,10 @@
 
 float area;
 float perimetro;
-
-int CalcularAreaCirculo(float radio);
-int CalcularPerimetroCirculo(float radio);
-int CalcularAreaRectangulo(float longitud, float altura);
-int CalcularPerimetroRectangulo(float longitud, float altura);
+float CalcularAreaCirculo(float radio);
+float CalcularPerimetroCirculo(float radio);
+float CalcularAreaRectangulo(float longitud, float altura);
+float CalcularPerimetroRectangulo(float longitud, float altura);
 void ImprimirResultados(float area,float perimetro);
 
 int main(int argc, char *argv[]) {
@@ -17,14 +16,14 @@ int main(int argc, char *argv[]) {
 	float altura;
 	
 	do{printf("Ingrese la figura que desea calcular\n");
-	printf("1 = Circulo\n");
-	printf("2 = Rectángulo\n");
+	printf("1 = Rectangulo\n");
+	printf("2 = Circulo\n");
 	printf("Opción: ");
 	scanf("%d",&opcion);
 	}while((opcion!=1)&&(opcion!=2));
 	
-		if(opcion==1){
-		printf("Opcion 1 seleccionada\n");
+		if(opcion==2){
+		printf("Opcion 2 seleccionada\n");
 		printf("ingrese el radio del circulo: ");
 		scanf("%f",&radio);
 	area=CalcularAreaCirculo(radio);
@@ -34,7 +33,7 @@ int main(int argc, char *argv[]) {
 	
 	}else{
 		
-		printf("Opcion 2 seleccionada\n");
+		printf("Opcion 1 seleccionada\n");
 		printf("ingrese la longitud del rectangulo: ");
 		scanf("%f",&longitud);
 		
@@ -52,7 +51,7 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
-int CalcularAreaCirculo(float radio){
+float CalcularAreaCirculo(float radio){
 	
 	float area;
 	
@@ -60,7 +59,7 @@ int CalcularAreaCirculo(float radio){
 	
 return area;
 }
-int CalcularPerimetroCirculo(float radio){
+float CalcularPerimetroCirculo(float radio){
 	
 	float perimetro;
 	
@@ -69,7 +68,7 @@ int CalcularPerimetroCirculo(float radio){
 return perimetro;
 
 }
-int CalcularAreaRectangulo(float longitud, float altura){
+float CalcularAreaRectangulo(float longitud, float altura){
 	
 	float area;
 	
@@ -77,7 +76,7 @@ int CalcularAreaRectangulo(float longitud, float altura){
 	
 return area;
 }
-int CalcularPerimetroRectangulo(float longitud, float altura){
+float CalcularPerimetroRectangulo(float longitud, float altura){
 	
 	float perimetro;
 	
