@@ -117,7 +117,7 @@ void mostrar_piezas(char *mensaje, float *p, int n){
 	int cuantas_piezas(int max) {
 		int n;
 		do {
-			printf("Cu·ntas piezas va a ingresar: ");
+			printf("Cu√°ntas piezas va a ingresar: ");
 			scanf("%d", &n);
 		} while ((n<0)||(n>max));
 		return n;
